@@ -1,5 +1,5 @@
 {
-    "name": "jayzeng/PHP-Enum",
+    "name": "jayzeng/php-enum",
     "description": "PHP enum base class",
     "type": "library",
     "description": "PHP enum class that OO way to manipulate enums ",
