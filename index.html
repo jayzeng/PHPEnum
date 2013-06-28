@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>Phpenum by jayzeng</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>Phpenum</h1>
+        <h2>PHP enum</h2>
+        <a href="https://github.com/jayzeng/PHPEnum" class="button"><small>View project on</small>GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
+<a name="php-enum" class="anchor" href="#php-enum"><span class="octicon octicon-link"></span></a>PHP Enum</h1>
+
+<p><a href="https://packagist.org/packages/jayzeng/php-enum"><img src="https://poser.pugx.org/jayzeng/php-enum/v/stable.png" alt="Latest Stable Version"></a> <a href="https://packagist.org/packages/jayzeng/php-enum"><img src="https://poser.pugx.org/jayzeng/php-enum/downloads.png" alt="Total Downloads"></a><a href="https://travis-ci.org/jayzeng/PHPEnum"><img src="https://travis-ci.org/jayzeng/PHPEnum.png" alt="Build Status"></a></p>
+
+<p>Project website: (<a href="http://jayzeng.github.com/PHPEnum/">http://jayzeng.github.com/PHPEnum/</a>)</p>
+
+<h2>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage:</h2>
+
+<div class="highlight"><pre>
+<span class="k">class</span> <span class="nc">StubUtilEnum</span> <span class="k">extends</span> <span class="nx">Enum</span>
+<span class="p">{</span>
+    <span class="k">const</span> <span class="no">ONE</span>   <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="k">const</span> <span class="no">TWO</span>   <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+    <span class="k">const</span> <span class="no">THREE</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
+    <span class="k">const</span> <span class="no">FOUR</span>  <span class="o">=</span> <span class="s2">"four"</span><span class="p">;</span>
+<span class="p">}</span>
+
+
+<span class="c1">// Retrieve value mapped to the label</span>
+<span class="nv">$StubUtilEnum</span><span class="o">-&gt;</span><span class="na">getValue</span><span class="p">(</span><span class="s1">'ONE'</span><span class="p">);</span>   <span class="c1">// returns 1</span>
+<span class="nv">$StubUtilEnum</span><span class="o">-&gt;</span><span class="na">getValue</span><span class="p">(</span><span class="s1">'FOUR'</span><span class="p">);</span>   <span class="c1">// returns four</span>
+<span class="nv">$StubUtilEnum</span><span class="o">-&gt;</span><span class="na">getValues</span><span class="p">();</span>    <span class="c1">//  array</span>
+
+<span class="c1">// Determine if a label exists</span>
+<span class="nv">$StubUtilEnum</span><span class="o">-&gt;</span><span class="na">hasLabel</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>         <span class="c1">// true</span>
+<span class="nv">$StubUtilEnum</span><span class="o">-&gt;</span><span class="na">hasLabel</span><span class="p">(</span><span class="s1">'oops'</span><span class="p">);</span>    <span class="c1">// false</span>
+
+</pre></div>
+
+<h2>
+<a name="details" class="anchor" href="#details"><span class="octicon octicon-link"></span></a>Details</h2>
+
+<p>See <a href="https://github.com/jayzeng/PHPEnum/blob/master/Tests/Src/EnumTest.php">https://github.com/jayzeng/PHPEnum/blob/master/Tests/Src/EnumTest.php</a></p>
+
+<h2>
+<a name="issues--development" class="anchor" href="#issues--development"><span class="octicon octicon-link"></span></a>Issues &amp; Development</h2>
+
+<ul>
+<li>Source hosted <a href="https://github.com/jayzeng/PHPEnum">GitHub</a>
+</li>
+<li>Report issues, questions, feature requests on <a href="https://github.com/jayzeng/PHPEnum/issues">GitHub Issues</a>
+</li>
+</ul><h2>
+<a name="how-to-release-new-version" class="anchor" href="#how-to-release-new-version"><span class="octicon octicon-link"></span></a>How to release new version?</h2>
+
+<ul>
+<li>RELEASE_VERSION - version number</li>
+<li>RELEASE_MESSAGE - release message</li>
+</ul><div class="highlight"><pre>make release <span class="nv">RELEASE_VERSION</span><span class="o">=</span><span class="s2">"0.1"</span> <span class="nv">RELEASE_MESSAGE</span><span class="o">=</span><span class="s2">"v0.1 is released"</span>
+</pre></div>
+
+<h2>
+<a name="author" class="anchor" href="#author"><span class="octicon octicon-link"></span></a>Author:</h2>
+
+<p><a href="https://github.com/jayzeng/">Jay Zeng</a>, e-mail: <a href="mailto:jayzeng@jay-zeng.com">jayzeng@jay-zeng.com</a></p>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/jayzeng/PHPEnum/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/jayzeng/PHPEnum/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/jayzeng/PHPEnum"></a> is maintained by <a href="https://github.com/jayzeng">jayzeng</a>.</p>
+
+          <p>This page was generated by <a href="pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+  
+  </body>
+</html>
