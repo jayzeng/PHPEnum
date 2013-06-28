@@ -1,5 +1,5 @@
-# Config Reader to parse ini files
-[![Build Status](https://travis-ci.org/jayzeng/PHPEnum.png)](https://travis-ci.org/jayzeng/PHPEnum)
+# PHP Enum 
+[![Latest Stable Version](https://poser.pugx.org/jayzeng/php-enum/v/stable.png)](https://packagist.org/packages/jayzeng/php-enum) [![Total Downloads](https://poser.pugx.org/jayzeng/php-enum/downloads.png)](https://packagist.org/packages/jayzeng/php-enum)[![Build Status](https://travis-ci.org/jayzeng/PHPEnum.png)](https://travis-ci.org/jayzeng/PHPEnum)
 
 Project website: (http://jayzeng.github.com/PHPEnum/)
 
